@@ -1,40 +1,33 @@
+import java.util.ArrayList;
+
 public class Store {
 
-    private Product[] products;
-    private int total;
+    private ArrayList<Product> products;
 
-    public Store(int numberItems){
-        products = new Product[numberItems];
-        total = 0;
+    public Store(){
+        products = new ArrayList<Product>();
     }
 
-    private boolean isFull(){
-        return (total == products.length);
-    }
+//    private boolean isFull(){
+//        return (total == products.length);
+//    }
 
-    private boolean isEmpty(){
-        return (total == 0);
-    }
+//    private boolean isEmpty(){
+//        return (total == 0);
+//    }
 
-    public boolean add(Product product){
-        if (isFull()){
-            return false;
+    public void add(Product product){
+        products.add (product);
         }
-        else{
-            products[total] = product;
-            total++;
-            return true;
-        }
-    }
 
     public String listProducts(){
-        if (isEmpty()){
+        if (products.size() == 0){
             return "No products";
         }
         else{
             String listOfProducts = "";
-            for (int i = 0; i < total; i++){
-                listOfProducts = listOfProducts + i + ": " + products[i] + "\n";
+            for (int i = 0; i < products.size(); i++){
+                listOfProducts = listOfProducts + i + ": " + products.get(i) + "\n";
             }
             return listOfProducts;
         }
@@ -42,11 +35,11 @@ public class Store {
 
     public String cheapestProduct()
     {
-        if (!isEmpty()){
-            Product cheapestProduct = products[0];
-            for (int i = 0; i < total; i++){
-                if (products[i].getUnitCost() < cheapestProduct.getUnitCost() )
-                    cheapestProduct = products[i];
+        if (products.size() != 0){
+            Product cheapestProduct = products.get(0);
+            for (int i = 0; i < products.size(); i++){
+                if (products.get(i).getUnitCost() < cheapestProduct.getUnitCost() )
+                    cheapestProduct = products.get(i);
             }
             return cheapestProduct.getProductName();
         }
@@ -56,15 +49,15 @@ public class Store {
 
     public String listCurrentProducts()
     {
-        if (isEmpty()){
+        if (products.size() != 0){
             return "No Products are in our current product line";
         }
         else
         {
             String listOfProducts = "";
-            for (int i = 0; i < total; i++){
-                if (products[i].isInCurrentProductLine())
-                    listOfProducts = listOfProducts + i + ": " + products[i] + "\n";
+            for (int i = 0; i < products.size(); i++){
+                if (products.get(i).isInCurrentProductLine())
+                    listOfProducts = listOfProducts + i + ": " + products.get(i) + "\n";
             }
             return listOfProducts;
         }
@@ -72,12 +65,12 @@ public class Store {
 
     public double averageProductPrice()
     {
-        if (!isEmpty()){
+        if (products.size() != 0){
             double totalPrice = 0;
-            for (int i = 0; i < total; i++){
-                totalPrice = totalPrice + products[i].getUnitCost();
+            for (int i = 0; i < products.size(); i++){
+                totalPrice = totalPrice + products.get(i).getUnitCost();
             }
-            return totalPrice / products.length;
+            return totalPrice / products.size();
         }
         else
         {
@@ -88,11 +81,11 @@ public class Store {
 
     public String listProductsAboveAPrice(double price)
     {
-        if (!isEmpty()){
+        if (products.size() != 0){
             String str = "";
-            for (int i = 0; i < total; i++){
-                if (products[i].getUnitCost() > price)
-                    str = str + i + ": " + products[i] + "\n";
+            for (int i = 0; i < products.size(); i++){
+                if (products.get(i).getUnitCost() > price)
+                    str = str + i + ": " + products.get(i) + "\n";
             }
             return str;
         }

@@ -24,7 +24,7 @@ public class Driver{
         System.out.print("How many Products would you like to have in your Store?  ");
         int numberProducts = input.nextInt();
 
-        store = new Store(numberProducts);
+        store = new Store();
 
         //ask the user for the details of the products and add them to the order
         for (int i = 0; i < numberProducts; i++){
