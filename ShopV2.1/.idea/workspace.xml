@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5820dbdd-51fd-4abd-9e20-be925a66d0aa" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../unit-01/archive/archive.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../unit-01/book-1/eclipse versions/DVDLibraryV1.0.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../unit-01/book-1/eclipse versions/DVDLibraryV2.0.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../unit-01/book-1/eclipse versions/ShopV3.0-InterimSolution.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../unit-01/book-1/eclipse versions/ShopV3.0-Solution.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../unit-01/book-1/eclipse versions/ShopV3.0-Solution/ShopV3.0/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../unit-01/book-1/eclipse versions/ShopV3.0-Solution/ShopV3.0/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../unit-01/book-1/eclipse versions/ShopV3.0-Solution/ShopV3.0/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../unit-01/book-1/eclipse versions/ShopV3.0-Solution/ShopV3.0/bin/Driver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../unit-01/book-1/eclipse versions/ShopV3.0-Solution/ShopV3.0/bin/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../unit-01/book-1/eclipse versions/ShopV3.0-Solution/ShopV3.0/bin/Store.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../unit-01/book-1/eclipse versions/ShopV3.0-Solution/ShopV3.0/src/Driver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../unit-01/book-1/eclipse versions/ShopV3.0-Solution/ShopV3.0/src/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../unit-01/book-1/eclipse versions/ShopV3.0-Solution/ShopV3.0/src/Store.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../unit-01/book-1/eclipse versions/ShopV3.0.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../unit-01/book-1/eclipse versions/ShopV4.0.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../unit-01/book-1/eclipse versions/versions from last year/Shop V4.0 (with CRUD)/Driver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../unit-01/book-1/eclipse versions/versions from last year/Shop V4.0 (with CRUD)/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../unit-01/book-1/eclipse versions/versions from last year/Shop V4.0 (with CRUD)/Store.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DVDLibraryV1.0.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../DVDLibraryV1.0.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DVDLibraryV1.0/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DVDLibraryV1.0/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DVDLibraryV1.0/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DVDLibraryV1.0/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DVDLibraryV2.0.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../DVDLibraryV2.0.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DVDLibraryV2.0/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DVDLibraryV2.0/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DVDLibraryV2.0/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DVDLibraryV2.0/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DVDLibraryV2.0/out/production/DVDLibraryV2.0/DVD.class" beforeDir="false" afterPath="$PROJECT_DIR$/../DVDLibraryV2.0/out/production/DVDLibraryV2.0/DVD.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DVDLibraryV2.0/out/production/DVDLibraryV2.0/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/../DVDLibraryV2.0/out/production/DVDLibraryV2.0/Driver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DVDLibraryV2.0/out/production/DVDLibraryV2.0/Library.class" beforeDir="false" afterPath="$PROJECT_DIR$/../DVDLibraryV2.0/out/production/DVDLibraryV2.0/Library.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1rnwzWdrR8qBCaljdcjxkCkejwe" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5820dbdd-51fd-4abd-9e20-be925a66d0aa" name="Default Changelist" comment="" />
+      <created>1619625424278</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1619625424278</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
