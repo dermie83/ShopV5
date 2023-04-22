@@ -8,6 +8,7 @@ public class Store {
         products = new ArrayList<Product>();
     }
 
+
 //    private boolean isFull(){
 //        return (total == products.length);
 //    }
@@ -17,8 +18,10 @@ public class Store {
 //    }
 
     public void add(Product product){
+
         products.add (product);
-        }
+    }
+
 
     public String listProducts(){
         if (products.size() == 0){
@@ -33,6 +36,7 @@ public class Store {
         }
     }
 
+
     public String cheapestProduct()
     {
         if (products.size() != 0){
@@ -46,6 +50,7 @@ public class Store {
         else
             return "No Products are in the ArrayList";
     }
+
 
     public String listCurrentProducts()
     {
@@ -63,6 +68,11 @@ public class Store {
         }
     }
 
+    private double toTwoDecimalPlaces(double num){
+        return (int) (num *100 ) /100.0;
+    }
+
+
     public double averageProductPrice()
     {
         if (products.size() != 0){
@@ -70,7 +80,7 @@ public class Store {
             for (int i = 0; i < products.size(); i++){
                 totalPrice = totalPrice + products.get(i).getUnitCost();
             }
-            return totalPrice / products.size();
+            return toTwoDecimalPlaces(totalPrice / products.size());
         }
         else
         {
@@ -78,6 +88,7 @@ public class Store {
         }
 
     }
+
 
     public String listProductsAboveAPrice(double price)
     {
