@@ -22,6 +22,12 @@ public class Store {
         products.add (product);
     }
 
+    public ArrayList<Product> getProducts()
+    {
+        return products;
+    }
+
+
 
     public String listProducts(){
         if (products.size() == 0){
@@ -54,7 +60,7 @@ public class Store {
 
     public String listCurrentProducts()
     {
-        if (products.size() != 0){
+        if (products.size() == 0){
             return "No Products are in our current product line";
         }
         else

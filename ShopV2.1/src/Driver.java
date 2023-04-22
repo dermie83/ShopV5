@@ -36,11 +36,13 @@ public class Driver{
         System.out.println("---------");
         System.out.println("  1) Add a Product");
         System.out.println("  2) List the Products");
+        System.out.println("  3) Update a Product");
+        System.out.println("  4) Delete a Product");
         System.out.println("---------");
-        System.out.println("  3) List the cheapest product");
-        System.out.println("  4) List the products in our current product line");
-        System.out.println("  5) Display average product unit cost");
-        System.out.println("  6) List products that are more expensive than a given price");
+        System.out.println("  5) List the cheapest product");
+        System.out.println("  6) List the products in our current product line");
+        System.out.println("  7) Display average product unit cost");
+        System.out.println("  8) List products that are more expensive than a given price");
         System.out.println("  0) Exit");
         System.out.print("==>> ");
         int option = input.nextInt();
@@ -114,13 +116,17 @@ public class Driver{
                     break;
                 case 2:    System.out.println(store.listProducts());
                     break;
-                case 3:    System.out.println(store.cheapestProduct());
+                case 3:    editProduct();
                     break;
-                case 4:    System.out.println(store.listCurrentProducts());
+                case 4:    deleteProduct();
                     break;
-                case 5:    System.out.println(store.averageProductPrice());
+                case 5:    System.out.println(store.cheapestProduct());
                     break;
-                case 6:    System.out.print("Enter the price barrier: ");
+                case 6:    System.out.println(store.listCurrentProducts());
+                    break;
+                case 7:    System.out.println(store.averageProductPrice());
+                    break;
+                case 8:    System.out.print("Enter the price barrier: ");
                     double price = input.nextDouble();
                     System.out.println(store.listProductsAboveAPrice(price));
                     break;
@@ -140,6 +146,55 @@ public class Driver{
         //the user chose option 0, so exit the program
         System.out.println("Exiting... bye");
         System.exit(0);
+    }
+
+    private void deleteProduct(){
+        // list the products and ask the user to delete the product from the array list
+        System.out.println(store.listProducts());
+        if (store.getProducts().size() > 0){
+            System.out.print("Enter the index of the product to delete >>>:  ");
+            int index = input.nextInt();
+            if((index >= 0) && (index <= store.getProducts().size())){
+                store.getProducts().remove(index);
+                System.out.println("Product deleted!");
+            }
+            else{
+                System.out.println("There is no product for this index number");
+            }
+        }
+
+    }
+
+    private void editProduct(){
+        System.out.println(store.listProducts());
+        if (store.getProducts().size() > 0)
+            System.out.print("Enter the index of the product to edit >>>:  ");
+            int index = input.nextInt();
+            if((index >= 0) && (index <= store.getProducts().size())) {
+
+                // gather new details of product by user
+                input.nextLine();
+                System.out.print("Enter the Product Name:  ");
+                String productName = input.nextLine();
+                System.out.print("Enter the Product Code:  ");
+                int productCode = input.nextInt();
+                System.out.print("Enter the Unit Cost:  ");
+                double unitCost = input.nextDouble();
+                System.out.print("Is this product in your current line (y/n): ");
+                char currentProduct = input.next().charAt(0);
+                boolean inCurrentProductLine = false;
+                if ((currentProduct == 'y') || (currentProduct == 'Y'))
+                    inCurrentProductLine = true;
+
+                Product product = store.getProducts().get(index);
+                product.setProductCode(productCode);
+                product.setProductName(productName);
+                product.setUnitCost(unitCost);
+                product.setInCurrentProductLine(inCurrentProductLine);
+            }
+            else {
+                System.out.println("There is no product for this index number");
+            }
     }
 
 
