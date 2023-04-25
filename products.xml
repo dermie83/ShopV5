@@ -1,0 +1,22 @@
+<object-stream>
+  <list>
+    <Product>
+      <productName>Soap</productName>
+      <productCode>23</productCode>
+      <unitCost>12.0</unitCost>
+      <inCurrentProductLine>true</inCurrentProductLine>
+    </Product>
+    <Product>
+      <productName>Shampoo</productName>
+      <productCode>34</productCode>
+      <unitCost>11.0</unitCost>
+      <inCurrentProductLine>true</inCurrentProductLine>
+    </Product>
+    <Product>
+      <productName>Dishwasher tabs</productName>
+      <productCode>45</productCode>
+      <unitCost>23.0</unitCost>
+      <inCurrentProductLine>false</inCurrentProductLine>
+    </Product>
+  </list>
+</object-stream>
