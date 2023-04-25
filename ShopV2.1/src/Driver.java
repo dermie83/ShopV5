@@ -43,6 +43,9 @@ public class Driver{
         System.out.println("  6) List the products in our current product line");
         System.out.println("  7) Display average product unit cost");
         System.out.println("  8) List products that are more expensive than a given price");
+        System.out.println("---------");
+        System.out.println("  9) Save products");
+        System.out.println("  10) Load products");
         System.out.println("  0) Exit");
         System.out.print("==>> ");
         int option = input.nextInt();
@@ -130,6 +133,10 @@ public class Driver{
                     double price = input.nextDouble();
                     System.out.println(store.listProductsAboveAPrice(price));
                     break;
+                case 9:    saveProducts();
+                    break;
+                case 10:   loadProducts();
+                    break;
                 default:    System.out.println("Invalid option entered: " + option);
                     break;
             }
@@ -195,6 +202,28 @@ public class Driver{
             else {
                 System.out.println("There is no product for this index number");
             }
+    }
+
+    private void saveProducts(){
+        try{
+            store.save();
+            System.out.println("Product save to store");
+
+        }catch(Exception e) {
+            System.out.println("Error reading file "+e);
+
+        }
+    }
+
+    private void loadProducts(){
+        try{
+            store.load();
+            System.out.println("Products successfully loaded from store");
+
+        }catch(Exception e) {
+            System.out.println("Error reading file "+e);
+
+        }
     }
 
 
